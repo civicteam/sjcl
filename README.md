@@ -1,3 +1,28 @@
+civic-sjcl
+====
+
+Civic-sjcl is a fork of [SJCL](https://github.com/bitwiseshiftleft/sjcl) pre-built with the ecc module. The reason for this fork is to allow us to include the precompiled output in civic repositories without having to either manually compile on install or create local modules with the precompiled verison.
+This fork ensures all civic repos use the same version of sjcl.js.
+
+For Developers
+===
+
+It is important that this fork stays up-to-date with the original upstream repo, to ensure we get the latest security updates. To update from the remote upstream, developers should set the following remote upstream in their local checked-out repo:
+
+```
+git remote add upstream https://github.com/bitwiseshiftleft/sjcl
+```
+
+To merge from the upstream remote:
+
+```
+git fetch upstream
+git merge upstream/master
+```
+
+Make sure to keep tags up to date with the upstream remote.
+
+
 sjcl
 ====
 
